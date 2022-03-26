@@ -1,7 +1,59 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* CSS Reset */
+
 :root {
     --main: #243447;
     --header: #141d26;
     --nav: #c51f5d;
     --text: #fff;
     --second-text: #ddd;
+}
+body {
+    margin: 0;
+}
+nav {
+    background-color: var(--nav);
+    color: var(--text);
+}
+nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+header {
+    background-color: var(--header);
+    color: var(--text);
+}
+header input {
+    background-color: var(--main);
+    border: none;
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 14px;
+    padding: 5px;
+}
+.img-small {
+    height: 50px;
+}
+header img {
+    height: 80px;
+}
+header button {
+    background-color: var(--nav);
+    border: none;
+    border-radius: 20px;
+    color: var(--text);
+    font-size: 14px;
+    padding: 10px 25px;
+}
+.content {
+    background-color: var(--main);
+    color: var(--text);
 }
