@@ -9,6 +9,8 @@
 }
 /* CSS Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 :root {
     --main: #243447;
     --header: #141d26;
@@ -16,12 +18,17 @@
     --text: #fff;
     --second-text: #ddd;
 }
+html {
+    height: 100%;
+}
 body {
     background-color: var(--main);
     display: grid;
+    font-family: 'Roboto', sans-serif;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, calc(100vh / 6));
+    grid-template-rows: repeat(6, 1fr);
     margin: 0;
+    height: max-content;
 }
 nav {
     background-color: var(--nav);
@@ -146,6 +153,9 @@ header button {
     box-sizing: border-box;
     padding: 20px;
 }
-#trending div {
+.trending-module {
     display: flex;
+}
+#announcements h2, #trending h2 {
+    margin: 30px 0 16px 0;
 }
