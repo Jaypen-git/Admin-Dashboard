@@ -36,10 +36,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 7;
+    grid-column: 1/2;
+    grid-row: 1/7;
     height: 100%;
     padding-top: 20px;
 }
@@ -59,8 +57,7 @@ nav a {
 header {
     background-color: var(--header);
     color: var(--text);
-    grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column: 2/6;
 }
 #upper-header {
     height: 40%;
@@ -124,10 +121,8 @@ header button {
     display: grid;
     grid-template-columns: 1fr 1fr 300px;
     grid-template-rows: 40px 1fr 40px 1fr;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    grid-column: 2/6;;
+    grid-row: 2/7;;
     min-height: max-content;
     padding: 30px;
 }
@@ -141,6 +136,7 @@ header button {
     grid-row: 1/2;
 }
 #projects {
+    display: grid;
     grid-row: 2/5;
 }
 #announcements-header {
